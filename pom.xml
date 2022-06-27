@@ -36,6 +36,7 @@
             <artifactId>phoenix-core</artifactId>
             <version>5.0.0-alpha-HBase-2.0</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.phoenix/phoenix-server-client -->
         <dependency>
             <groupId>org.apache.phoenix</groupId>
             <artifactId>phoenix-server-client</artifactId>
