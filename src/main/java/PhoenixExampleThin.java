@@ -1,6 +1,6 @@
 
 import java.sql.*;
-public class PhoenixExample {
+public class PhoenixExampleThin {
 
     public static void main(String[] args) {
         // Create variables
@@ -13,7 +13,7 @@ public class PhoenixExample {
             // Connect to the database
             System.out.println("Before Connection....");
             Class.forName("org.apache.phoenix.queryserver.client.Driver");
-            connection = DriverManager.getConnection("jdbc:phoenix:thin:url=http://localhost:8765;serialization=PROTOBUF");
+            connection = DriverManager.getConnection("jdbc:phoenix:thin:url=http://192.168.2.13:8765;serialization=PROTOBUF");
             System.out.println("Connection created....");
 
             // Create a JDBC statement
@@ -22,9 +22,9 @@ public class PhoenixExample {
             System.out.println("Statement created....");
 
             // Execute our statements
-            statement.executeUpdate("create table javatest (mykey integer not null primary key, mycolumn varchar)");
-            statement.executeUpdate("upsert into javatest values (1,'Hello')");
-            statement.executeUpdate("upsert into javatest values (2,'Java Application')");
+//            statement.executeUpdate("create table javatest (mykey integer not null primary key, mycolumn varchar)");
+            statement.executeUpdate("upsert into javatest values (3,'Hello')");
+            statement.executeUpdate("upsert into javatest values (4,'Java Application')");
 
             // Query for table
             ps = connection.prepareStatement("select * from javatest");
