@@ -10,7 +10,7 @@ public class PhoenixExamplePD {
         Connection conn;
         Properties prop = new Properties();
         Class.forName("org.apache.phoenix.jdbc.PhoenixDriver");
-        conn =  DriverManager.getConnection("jdbc:phoenix:192.168.2.13:2181/hbase");
+        conn =  DriverManager.getConnection("jdbc:phoenix:yanshu2,yanshu3,yanshu4:2181/hbase");
         System.out.println("got connection");
         ResultSet rst = conn.createStatement().executeQuery("select * from javatest");
         while (rst.next()) {

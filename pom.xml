@@ -31,10 +31,22 @@
             <version>2.1.2</version>
             <type>pom</type>
         </dependency>
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.apache.spark/spark-core &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.spark</groupId>-->
+<!--            <artifactId>spark-core_2.13</artifactId>-->
+<!--            <version>3.3.0</version>-->
+<!--        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/org.apache.hadoop/hadoop-core -->
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-core</artifactId>
+            <version>1.2.1</version>
+        </dependency>
         <dependency>
             <groupId>org.apache.phoenix</groupId>
             <artifactId>phoenix-core</artifactId>
-            <version>5.0.0-alpha-HBase-2.0</version>
+            <version>4.14.0-cdh5.14.2</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.phoenix/phoenix-server-client -->
         <dependency>
@@ -46,9 +58,41 @@
         <dependency>
             <groupId>org.apache.phoenix</groupId>
             <artifactId>phoenix-queryserver</artifactId>
-            <version>4.14.3-HBase-1.4</version>
+            <version>4.14.1-HBase-1.2</version>
         </dependency>
-
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>5.2.2</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.11.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>2.17.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-scratchpad</artifactId>
+            <version>5.2.2</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml-schemas</artifactId>
+            <version>4.1.2</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>4.1.2</version>
+        </dependency>
     </dependencies>
     <!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
 
